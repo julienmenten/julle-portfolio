@@ -1,9 +1,14 @@
 import { FC, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { ParticlesOptions } from "./ParticlesOptions";
+import style from './ParticlesBackground.module.scss';
+
 const ParticlesBackground: FC = () => {
     function particlesLoaded  () : void {
         
+    }
+    function particlesInit () : void {
+
     }
     useEffect(() => {
       
@@ -12,13 +17,13 @@ const ParticlesBackground: FC = () => {
     return (
         <>
         <Particles
+            className={style.particlesBackground}
             id="background" 
-            loaded={particlesLoaded()}
-            options={ParticlesOptions}
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={ParticlesOptions}  
             
         />
-
-        
         </>
     )
 }

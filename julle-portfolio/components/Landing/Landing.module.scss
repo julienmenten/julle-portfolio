@@ -1,0 +1,32 @@
+@use '../../styles/_abstracts' as var;
+
+#julle_landing {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+.centered_title {
+    text-align: center;
+    .landing_title {
+        color: var.$julle_red;
+        font-size: 3.5rem;
+    }
+    .landing_subtitle {
+        font-size: 2.2rem;
+        font-weight: normal;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        span {
+            margin-bottom: 8px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.social_links {
+
+}

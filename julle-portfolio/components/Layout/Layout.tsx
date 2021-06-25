@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Head from 'next/head';
+import ParticlesBackground from "../Particles/ParticlesBackground";
 
 const Layout: FC = ({ children, }) => {
     return (
@@ -10,7 +11,7 @@ const Layout: FC = ({ children, }) => {
             <main>
                 {children}
             </main>
-           
+            <ParticlesBackground></ParticlesBackground>
         </>
     )
 }

@@ -6,7 +6,7 @@ export const ParticlesOptions = {
       },
       fpsLimit: 60,
       interactivity: {
-        detectsOn: "canvas",
+        detectsOn: "window",
         events: {
           onClick: {
             enable: true,
@@ -17,25 +17,16 @@ export const ParticlesOptions = {
             mode: "grab",
             parallax: {
                 enable: true,
-                force: 15,
-                smooth: 10
+                force: 10,
+                smooth: 20
             }
           },
           resize: true,
         },
         modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 0.8,
-            size: 40,
-          },
-          push: {
-            quantity: 4,
-          },
           repulse: {
             distance: 200,
-            duration: 0.4,
+            duration: 0.5,
           },
           grab: {
               distance: 150,
@@ -66,7 +57,7 @@ export const ParticlesOptions = {
           direction: "none",
           enable: true,
           outMode: "bounce",
-          random: false,
+          random: true,
           speed: 6,
           straight: false,
         },
@@ -93,4 +84,5 @@ export const ParticlesOptions = {
           enable:true,
           zIndex: -1
       }
+
 }
